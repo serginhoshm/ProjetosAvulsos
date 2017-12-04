@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2016/08/16 07:28:20.419,C:\Users\sergio.marchiori\Dropbox\Projetos\CheckCRC\ChecarCRC.dproj=C:\Users\sergio.marchiori\OneDrive\Documents\RAD Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2016/08/16 07:28:27.580,=C:\Users\sergio.marchiori\Dropbox\Projetos\CheckCRC\Unit1.pas</Transaction>
+    <Transaction>2016/08/16 07:28:39.804,C:\Users\sergio.marchiori\Dropbox\Projetos\CheckCRC\d3_crc32.pas=C:\Users\sergio.marchiori\Dropbox\Projetos\CheckCRC\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

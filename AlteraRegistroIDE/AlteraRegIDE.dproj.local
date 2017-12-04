@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/04/14 10:51:59.000.521,=C:\Users\sergio.marchiori\OneDrive\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/04/14 11:00:27.000.380,=C:\Users\sergio.marchiori\OneDrive\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/04/14 11:02:33.000.208,=C:\Users\sergio.marchiori\OneDrive\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/05/05 10:00:10.000.912,=C:\Users\sergio.marchiori\OneDrive\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/05/05 10:07:57.000.676,C:\Users\sergio.marchiori\OneDrive\Documents\RAD Studio\Projects\Unit1.dfm=C:\Users\sergio.marchiori\OneDrive\Sistemas\AlteraRegistroIDE\u_principal.dfm</Transaction>
+    <Transaction>2016/05/05 10:07:57.000.676,C:\Users\sergio.marchiori\OneDrive\Documents\RAD Studio\Projects\Unit1.pas=C:\Users\sergio.marchiori\OneDrive\Sistemas\AlteraRegistroIDE\u_principal.pas</Transaction>
+    <Transaction>2016/05/05 10:08:02.000.790,C:\Users\sergio.marchiori\OneDrive\Documents\RAD Studio\Projects\Project1.dproj=C:\Users\sergio.marchiori\OneDrive\Sistemas\AlteraRegistroIDE\AlteraRegIDE.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
