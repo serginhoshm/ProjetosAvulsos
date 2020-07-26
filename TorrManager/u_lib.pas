@@ -3,9 +3,11 @@ unit u_lib;
 interface
 
 uses
+  Windows,
   SysUtils,
   Classes,
-  IniFiles;
+  IniFiles,
+  SvcMgr;
 
 type
   TIniEntry = record
@@ -20,6 +22,8 @@ type
   function GetFileSize(fileName : wideString) : Int64;
   procedure ReadIniConfig(sectionName: string; var IniConf: TIniEntry);
   procedure DelEmptyFolders(dir: string);
+  procedure LogMessage(var Msg: TStringList);
+  
 
 implementation
 
@@ -69,6 +73,9 @@ begin
 
   try
     aIni := TIniFile.Create(aIniFilename);
+    if Trim(sectionName) = EmptyStr then
+      raise Exception.Create('Section name must be provided as parameter');
+
     if not aIni.SectionExists(sectionName)then
       raise Exception.Create('Section not found on INI file: ' + sectionName);
 
@@ -104,6 +111,23 @@ begin
  except
    // do nothing - dir is not empty
  end;
+end;
+
+procedure LogMessage(var Msg: TStringList);
+var
+  WMsg: TEventLogger;
+  i: Integer;
+  FinalLog: string;
+begin
+  WMsg :=TEventLogger.Create('torr_man');
+  try
+    for i := 0 to Msg.Count -1 do
+      FinalLog := FinalLog + Msg.Strings[i] + #13#10;
+
+    WMsg.LogMessage(FinalLog, EVENTLOG_INFORMATION_TYPE);
+  finally
+    FreeAndNil(WMsg);
+  end;
 end;
 
 end.
